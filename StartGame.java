@@ -9,7 +9,18 @@ public class StartGame {
     System.out.println("Player1 name is: " + player1.getName());
     
     // this won't work until you create a getHealth method in your object. Uncomment it when you do.
-    // System.out.println(player1.getName() + "'s health is: " + player1.getHealth());
+    System.out.println(player1.getName() + "'s health is: " + player1.getHealth());
+    
+    Player player2 = new Player();
+    player2.setName("Bryce");
+    player2.setHealth(5);
+    System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
+    
+    Skill spell = new Skill("Fireball", 28);
+    System.out.println(spell.getName() + "'s strenght is: " + spell.getStrength());
+    spell.setName("Ice Knife");
+    spell.setStrength(12);
+    System.out.println(spell.getName() + "'s strenght is: " + spell.getStrength());
   }  
   
 }
