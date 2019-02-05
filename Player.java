@@ -39,4 +39,7 @@ public class Player {
   public int getHealth() {
     return this.health;
   }
+  public void hit(Skill skill){
+    health -= skill.getStrength();
+  }
 }

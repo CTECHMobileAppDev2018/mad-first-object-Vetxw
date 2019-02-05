@@ -21,6 +21,14 @@ public class StartGame {
     spell.setName("Ice Knife");
     spell.setStrength(12);
     System.out.println(spell.getName() + "'s strenght is: " + spell.getStrength());
+    
+    player2.hit(spell);
+    System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
+    
+    spell.setName("Mass Cure Wounds");
+    spell.setStrength(-18);
+    player2.hit(spell);
+    System.out.println(player2.getName() + "'s health is: " + player2.getHealth());
   }  
   
 }
